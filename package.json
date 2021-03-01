@@ -1,18 +1,20 @@
 {
-  "name": "yasaklar",
+  "name": "kisitlamalar",
   "version": "1.0.0",
-  "description": "1 Mart yasakları",
+  "description": "1 Mart kısıtlamaları",
   "author": "Hasan Kürşat Küçüköztaş",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "react": "next",
-    "react-dom": "next",
-    "react-scripts": "2.0.3",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-scripts": "4.0.3",
     "react-select": "2.4.4"
   },
   "devDependencies": {},
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
