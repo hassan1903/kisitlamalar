@@ -1,0 +1,129 @@
+{
+  "rules": [
+    {
+      "ruleId": 1,
+      "label": "Haftasonu sokağa çıkabilirsiniz.",
+      "status": [1, 2]
+    },
+    {
+      "ruleId": 1,
+      "label": "Sadece Cumartesi sokağa çıkabilirsiniz. Pazar maalesef yasak.",
+      "status": [3, 4]
+    },
+    {
+      "ruleId": 2,
+      "label": "Akşam sokağa çıkmak yasak.",
+      "status": [1, 2, 3, 4]
+    },
+    {
+      "ruleId": 3,
+      "label": "65 yaşından büyük, 20 yaşından küçük kişiler sokağa çıkabilir.",
+      "status": [1, 2]
+    },
+    {
+      "ruleId": 3,
+      "label": "65 yaşından büyük, 20 yaşından küçük kişiler sokağa çıkması gevşetilecek.",
+      "status": [3, 4]
+    },
+    {
+      "ruleId": 4,
+      "label": "Okul öncesi eğitim kurumları ve özel eğitim okulları tam zamanlı yüz yüze eğitim verir.",
+      "status": [1, 2, 3, 4]
+    },
+    {
+      "ruleId": 5,
+      "label": "Birleştirilmiş sınıflı okullar ve köy vb. seyrek nüfuslu yerlerdeki okullar yüz yüze eğitime tam zamanlı devam eder.",
+      "status": [1, 2, 3, 4]
+    },
+    {
+      "ruleId": 6,
+      "label": "İlkokullar 2 gün okulda seyreltilmiş sınıflarda yüz yüze 3 gün uzaktan eğitim alır.",
+      "status": [1, 2, 3, 4]
+    },
+    {
+      "ruleId": 7,
+      "label": "Ortaokul 5, 6, 7.sınıflar 2 gün okulda seyreltilmiş sınıflarda yüz yüze 3 gün uzaktan eğitim alır.",
+      "status": [1, 2]
+    },
+    {
+      "ruleId": 7,
+      "label": "Ortaokul 5, 6, 7.sınıflar tam zamanlı uzaktan eğitime devam eder.",
+      "status": [3, 4]
+    },
+    {
+      "ruleId": 8,
+      "label": "Ortaokul 8.sınıflar haftada 12 ila 22 saat olacak şekilde seyreltilmiş yüz yüze eğitim alır.",
+      "status": [1, 2, 3, 4]
+    },
+    {
+      "ruleId": 9,
+      "label": "Hazırlık, 9, 10, 11.sınıflarda haftada 2 gün seyreltilmiş sınıflarda yüz yüze eğitim alır.",
+      "status": [1, 2]
+    },
+    {
+      "ruleId": 9,
+      "label": "Hazırlık, 9, 10, 11.sınıflar tam zamanlı uzaktan eğitime devam eder.",
+      "status": [3, 4]
+    },
+    {
+      "ruleId": 10,
+      "label": "12.sınıflar haftada 16 ila 24 saat olacak şekilde planlanan seyreltilmiş sınıflarda yüz yüze eğitim alır.",
+      "status": [1, 2, 3, 4]
+    },
+    {
+      "ruleId": 11,
+      "label": "Destekleme ve yetiştirme kursları yüz yüze eğitime devam eder.",
+      "status": [1, 2, 3, 4]
+    },
+    {
+      "ruleId": 12,
+      "label": "Sınavlar seyreltilmiş sınıflarda yapılır.",
+      "status": [1, 2, 3, 4]
+    },
+    {
+      "ruleId": 13,
+      "label": "Restaurant ve cafeler 07:00-19:00 saatleri arasında %50 kapasite ile açık olacak.",
+      "status": [1, 2, 3]
+    },
+    {
+      "ruleId": 13,
+      "label": "Restaurant ve cafeler kapalı olacak.",
+      "status": [4]
+    },
+    {
+      "ruleId": 14,
+      "label": "Halı saha ve yüzme havuzları 09:00-19:00 arasında açık olacak.",
+      "status": [1, 2]
+    },
+    {
+      "ruleId": 14,
+      "label": "Halı saha ve yüzme havuzları kapalı olacak.",
+      "status": [3, 4]
+    },
+    {
+      "ruleId": 15,
+      "label": "Kamu kuruluşları açık olacak.",
+      "status": [1, 2, 3, 4]
+    },
+    {
+      "ruleId": 16,
+      "label": "Nikah 100 kişiye kadar 1 saat süre ile serbest olacak.",
+      "status": [1, 2]
+    },
+    {
+      "ruleId": 16,
+      "label": "Nikah 50 kişiye kadar 1 saat süre ile serbest olacak.",
+      "status": [3, 4]
+    },
+    {
+      "ruleId": 17,
+      "label": "Genel kurullar 300 kişiye kadar serbest olacak.",
+      "status": [1, 2, 3]
+    },
+    {
+      "ruleId": 17,
+      "label": "Genel kurullar yasak olacak.",
+      "status": [4]
+    }
+  ]
+}
