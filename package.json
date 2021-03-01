@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "1 Mart kısıtlamaları",
   "author": "Hasan Kürşat Küçüköztaş",
+  "homepage": "http://hassan1903.github.io/kisitlamalar",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
