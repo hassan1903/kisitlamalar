@@ -23,7 +23,7 @@ function LightBulb() {
   return (
     <div className="App">
       <div style={{ paddingBottom: 50, textAlign: "center" }}>
-        <LightbulbSvg fillColor={fillColor?.value || "#000"} />
+        <LightbulbSvg fillColor={fillColor ? fillColor.value : "#000"} />
       </div>
       <Select
         placeholder="Şehir seçiniz"
