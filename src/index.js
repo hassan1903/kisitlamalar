@@ -14,42 +14,59 @@ function LightBulb() {
     {
       key: 1,
       value: "#3363ff",
+      label: "Düşük riskli bölge",
     },
-    { key: 2, value: "#ffbb73" },
-    { key: 3, value: "#ff7f00" },
-    { key: 4, value: "#ff3933" },
+    { key: 2, value: "#ffbb73", label: "Orta riskli bölge" },
+    { key: 3, value: "#ff7f00", label: "Yüksek riskli bölge" },
+    { key: 4, value: "#ff3933", label: "Çok yüksek riskli bölge" },
   ];
   const fillColor = colorCode.find((element) => element.key === light);
   return (
     <div className="App">
-      <div style={{ paddingBottom: 50, textAlign: "center" }}>
+      <div style={{ paddingTop: 20, paddingBottom: 50, textAlign: "center" }}>
         <LightbulbSvg fillColor={fillColor ? fillColor.value : "#000"} />
       </div>
-      <Select
-        placeholder="Şehir seçiniz"
-        value={selectedCity}
-        options={cityList.cities}
-        onChange={(val) => {
-          const cityStatus = cityList.cities.find(
-            (item) => item.label === val.label
-          );
-          setLight(cityStatus.status);
-          setSelectedCity(val);
-        }}
-      />
-      {light !== 0 ? (
-        <ul>
-          {ruleList.rules.map((el) => {
-            if (el.ruleId === ruleId) {
-              const index = el.status.indexOf(light);
-              if (index > -1) {
-                ruleId++;
-                return <li key={ruleId}>{el.label}</li>;
+      <div className="container">
+        <Select
+          placeholder="Şehir seçiniz"
+          label={selectedCity}
+          options={cityList.cities}
+          onInputChange={(newValue) => {
+            return (
+              newValue.charAt(0).toLocaleUpperCase("tr-TR") + newValue.slice(1)
+            );
+          }}
+          onChange={(val) => {
+            const cityStatus = cityList.cities.find(
+              (item) => item.label === val.label
+            );
+            setLight(cityStatus.status);
+            setSelectedCity(val);
+          }}
+        />
+        {light !== 0 && selectedCity ? (
+          <h3 className="title">{colorCode[light - 1].label}</h3>
+        ) : null}
+        {light !== 0 ? (
+          <ul>
+            {ruleList.rules.map((el) => {
+              if (el.ruleId === ruleId) {
+                const index = el.status.indexOf(light);
+                if (index > -1) {
+                  ruleId++;
+                  return (
+                    <li key={ruleId} style={{ paddingBottom: 5 }}>
+                      {el.label}
+                    </li>
+                  );
+                }
+                return null;
               }
-            }
-          })}
-        </ul>
-      ) : null}
+              return null;
+            })}
+          </ul>
+        ) : null}
+      </div>
     </div>
   );
 }
