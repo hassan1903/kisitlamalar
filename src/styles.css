@@ -11,6 +11,41 @@
   text-align: center;
 }
 
+.footercontainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.tweetbutton {
+  padding: 5px 10px;
+  background-color: #1d9bf0;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.tweetlabel {
+  margin-left: 5px;
+  white-space: nowrap;
+}
+
 ul {
   list-style: none;
   margin-left: 0;
