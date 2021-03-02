@@ -22,14 +22,11 @@ li {
   text-indent: -1em;
 }
 
-.rule-item {
-  padding-bottom: 5px;
-}
-
 li.rule-item-cross:before {
   content: "\292b";
   color: red;
   font-size: 18px;
+  padding-bottom: 5px;
   padding-right: 5px;
 }
 

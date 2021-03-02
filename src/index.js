@@ -69,7 +69,11 @@ const LightBulb = () => {
                 if (index > -1) {
                   ruleId++;
                   return (
-                    <li key={ruleId} className={"rule-item-" + el.icon}>
+                    <li
+                      key={ruleId}
+                      style={{ paddingBottom: 10 }}
+                      className={"rule-item-" + el.icon}
+                    >
                       {el.label}
                     </li>
                   );
