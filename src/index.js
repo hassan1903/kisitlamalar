@@ -1,4 +1,3 @@
-// @flow
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import Select from "react-select";
@@ -45,7 +44,9 @@ function LightBulb() {
           }}
         />
         {light !== 0 && selectedCity ? (
-          <h3 className="title">{colorCode[light - 1].label}</h3>
+          <h3 className="title" style={{ color: colorCode[light - 1].value }}>
+            {colorCode[light - 1].label}
+          </h3>
         ) : null}
         {light !== 0 ? (
           <ul>
@@ -55,7 +56,7 @@ function LightBulb() {
                 if (index > -1) {
                   ruleId++;
                   return (
-                    <li key={ruleId} style={{ paddingBottom: 5 }}>
+                    <li key={ruleId} className={"rule-item-" + el.icon}>
                       {el.label}
                     </li>
                   );
@@ -65,6 +66,11 @@ function LightBulb() {
               return null;
             })}
           </ul>
+        ) : null}
+        {light !== 0 && selectedCity ? (
+          <h6 className="title">
+            {"Lovely developed by Hasan Kürşat Küçüköztaş"}
+          </h6>
         ) : null}
       </div>
     </div>

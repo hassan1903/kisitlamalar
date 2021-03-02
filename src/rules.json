@@ -3,127 +3,152 @@
     {
       "ruleId": 1,
       "label": "Haftasonu sabah 05:00 ila akşam 21:00 arası sokağa çıkabilirsiniz.",
-      "status": [1, 2]
+      "status": [1, 2],
+      "icon": "check"
     },
     {
       "ruleId": 1,
       "label": "Haftasonu sadece Cumartesi günü sabah 05:00 ila akşam 21:00 arası sokağa çıkabilirsiniz. Pazar günü yasaklar devam ediyor.",
-      "status": [3, 4]
+      "status": [3, 4],
+      "icon": "cross"
     },
     {
       "ruleId": 2,
       "label": "Haftanın her günü akşam 21:00 ile sabah 05:00 arasındaki sokağa çıkma sınırlaması devam ediyor.",
-      "status": [1, 2, 3, 4]
+      "status": [1, 2, 3, 4],
+      "icon": "cross"
     },
     {
       "ruleId": 3,
       "label": "65 yaş ve üzeri ile 20 yaş altı kişiler için getirilen sokağa çıkma süre kısıtlaması kalktı diğer yaş grubu ile aynı kurallara dahil oldu.",
-      "status": [1, 2]
+      "status": [1, 2],
+      "icon": "check"
     },
     {
       "ruleId": 3,
       "label": "65 yaş ve üzeri ile 20 yaş altı kişiler için getirilen sokağa çıkma süreleri 3 saatten 4 saate yükseldi. Ayrıca 65 yaş ve üzeri kişiler 10.00-14.00 saatleri arasında, 20 yaş altı kişiler ise 14.00-18.00 saatleri arasında sokağa çıkabilecek.",
-      "status": [3, 4]
+      "status": [3, 4],
+      "icon": "cross"
     },
     {
       "ruleId": 4,
       "label": "Okul öncesi eğitim kurumları ve özel eğitim okulları tam zamanlı yüz yüze eğitim verecek.",
-      "status": [1, 2, 3, 4]
+      "status": [1, 2, 3, 4],
+      "icon": "check"
     },
     {
       "ruleId": 5,
       "label": "Birleştirilmiş sınıflı okullar ve köy vb. seyrek nüfuslu yerlerdeki okullar yüz yüze eğitime tam zamanlı devam edecek.",
-      "status": [1, 2, 3, 4]
+      "status": [1, 2, 3, 4],
+      "icon": "check"
     },
     {
       "ruleId": 6,
       "label": "İlkokullar 2 gün okulda seyreltilmiş sınıflarda yüz yüze, 3 gün uzaktan eğitim alacak.",
-      "status": [1, 2, 3, 4]
+      "status": [1, 2, 3, 4],
+      "icon": "check"
     },
     {
       "ruleId": 7,
       "label": "Ortaokul 5, 6, 7.sınıflar 2 gün okulda seyreltilmiş sınıflarda yüz yüze, 3 gün uzaktan eğitim alacak.",
-      "status": [1, 2]
+      "status": [1, 2],
+      "icon": "check"
     },
     {
       "ruleId": 7,
       "label": "Ortaokul 5, 6, 7.sınıflar tam zamanlı uzaktan eğitime devam edecek.",
-      "status": [3, 4]
+      "status": [3, 4],
+      "icon": "cross"
     },
     {
       "ruleId": 8,
       "label": "Ortaokul 8.sınıflar haftada 12 ila 22 saat olacak şekilde seyreltilmiş yüz yüze eğitim alacak.",
-      "status": [1, 2, 3, 4]
+      "status": [1, 2, 3, 4],
+      "icon": "check"
     },
     {
       "ruleId": 9,
       "label": "Hazırlık, 9, 10, 11.sınıflarda haftada 2 gün seyreltilmiş sınıflarda yüz yüze eğitim alacak.",
-      "status": [1, 2]
+      "status": [1, 2],
+      "icon": "check"
     },
     {
       "ruleId": 9,
       "label": "Hazırlık, 9, 10, 11.sınıflar tam zamanlı uzaktan eğitime devam edecek.",
-      "status": [3, 4]
+      "status": [3, 4],
+      "icon": "cross"
     },
     {
       "ruleId": 10,
       "label": "12.sınıflar haftada 16 ila 24 saat olacak şekilde planlanan seyreltilmiş sınıflarda yüz yüze eğitim alacak.",
-      "status": [1, 2, 3, 4]
+      "status": [1, 2, 3, 4],
+      "icon": "check"
     },
     {
       "ruleId": 11,
       "label": "Destekleme ve yetiştirme kursları yüz yüze eğitime devam edecek.",
-      "status": [1, 2, 3, 4]
+      "status": [1, 2, 3, 4],
+      "icon": "check"
     },
     {
       "ruleId": 12,
       "label": "Sınavlar seyreltilmiş sınıflarda yapılacak.",
-      "status": [1, 2, 3, 4]
+      "status": [1, 2, 3, 4],
+      "icon": "check"
     },
     {
       "ruleId": 13,
       "label": "Restoran, lokanta, kafetarya, tatlıcı, pastane ve kıraathane gibi yerler 07:00-19:00 saatleri arasında %50 kapasite ile açık olacak. Yeme-içme yerleri 19:00-21.00 saatleri arasında paket servisi veya gel-al şeklinde, 21.00-24.00 saatleri arasında ise sadece paket servis şeklinde hizmet verebilecekler.",
-      "status": [1, 2, 3]
+      "status": [1, 2, 3],
+      "icon": "check"
     },
     {
       "ruleId": 13,
       "label": "Restoran, lokanta, kafetarya, tatlıcı, pastane ve kıraathane gibi yerler kapalı olacak. Yeme içme yerleri, 10.00-20.00 saatleri arasında paket servisi veya gel-al şeklinde, 20.00-24.00 saatleri arasında ise sadece paket servis şeklinde hizmet verebilecek olup ayrıca işyeri içerisinde hizmet sunamayacaklar.",
-      "status": [4]
+      "status": [4],
+      "icon": "cross"
     },
     {
       "ruleId": 14,
       "label": "Halı saha, yüzme havuzu vb tesisler girişlerde HES kodu kullanılması ve seyirci/refakatçi/misafir alınmaması kaydıyla 09:00-19:00 arasında açık olacak.",
-      "status": [1, 2]
+      "status": [1, 2],
+      "icon": "check"
     },
     {
       "ruleId": 14,
       "label": "Halı saha, yüzme havuzu vb tesisler kapalı olacak.",
-      "status": [3, 4]
+      "status": [3, 4],
+      "icon": "cross"
     },
     {
       "ruleId": 15,
       "label": "Kamu kuruluşları açık olacak.",
-      "status": [1, 2, 3, 4]
+      "status": [1, 2, 3, 4],
+      "icon": "check"
     },
     {
       "ruleId": 16,
       "label": "Nikah ve nikah merasimi şeklindeki düğünler, kişi başına minimum 8 m2 alan ayırmak, katılımcı sayısı 100’ü geçmemek ve 1 saatle sınırlı olmak üzere yapılabilecek.",
-      "status": [1, 2]
+      "status": [1, 2],
+      "icon": "check"
     },
     {
       "ruleId": 16,
       "label": "Nikah ve nikah merasimi şeklindeki düğünler, kişi başına minimum 8 m2 alan ayırmak, katılımcı sayısı 50’yi geçmemek ve 1 saatle sınırlı olmak üzere yapılabilecek.",
-      "status": [3, 4]
+      "status": [3, 4],
+      "icon": "cross"
     },
     {
       "ruleId": 17,
       "label": "Genel kurullar 300 kişiye kadar serbest olacak.",
-      "status": [1, 2, 3]
+      "status": [1, 2, 3],
+      "icon": "check"
     },
     {
       "ruleId": 17,
       "label": "Genel kurullar yasak olacak.",
-      "status": [4]
+      "status": [4],
+      "icon": "cross"
     }
   ]
 }

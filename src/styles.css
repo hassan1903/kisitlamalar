@@ -4,11 +4,38 @@
   flex: 1;
   justify-content: center;
   align-items: center;
-  font-family: sans-serif;
+  font-family: "Architects Daughter";
 }
 
 .title {
   text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.rule-item {
+  padding-bottom: 5px;
+}
+
+li.rule-item-cross:before {
+  content: "\292b";
+  color: red;
+  padding-right: 5px;
+}
+
+li.rule-item-check:before {
+  content: "\2713";
+  color: green;
+  padding-right: 5px;
 }
 
 @media (min-width: 1281px) {
