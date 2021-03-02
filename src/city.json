@@ -2,7 +2,7 @@
   "cities": [
     { "label": "Adana", "value": 1, "status": 2 },
     { "label": "Adıyaman", "value": 2, "status": 4 },
-    { "label": "Afyonkarahisar", "value": 3, "status": 2 },
+    { "label": "Afyon", "value": 3, "status": 2 },
     { "label": "Ağrı", "value": 4, "status": 1 },
     { "label": "Amasya", "value": 5, "status": 4 },
     { "label": "Ankara", "value": 6, "status": 2 },

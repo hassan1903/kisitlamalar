@@ -1,15 +1,19 @@
 // @flow
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import Select from "react-select";
-import cityList from "./city.json";
+import citiesList from "./city.json";
 import ruleList from "./rules.json";
+import updateData from "./getDataFromMinistry.js";
+import moment from "moment";
+import "moment/locale/tr";
 import "./styles.css";
 
-function LightBulb() {
+const LightBulb = () => {
   let [light, setLight] = useState(0);
   let [selectedCity, setSelectedCity] = useState({ value: "", label: "" });
   let ruleId = 1;
+  let cityList = citiesList;
   const colorCode = [
     {
       key: 1,
@@ -21,8 +25,16 @@ function LightBulb() {
     { key: 4, value: "#ff3933", label: "Çok yüksek riskli bölge" },
   ];
   const fillColor = colorCode.find((element) => element.key === light);
+  useEffect(async () => {
+    cityList = await updateData(cityList);
+  });
   return (
     <div className="App">
+      <h4 className="title">
+        {moment()
+          .locale("tr")
+          .format("LL") + " tarihi illere göre güncel kısıtlama kuralları"}
+      </h4>
       <div style={{ paddingTop: 20, paddingBottom: 50, textAlign: "center" }}>
         <LightbulbSvg fillColor={fillColor ? fillColor.value : "#000"} />
       </div>
@@ -83,9 +95,9 @@ function LightBulb() {
       </div>
     </div>
   );
-}
+};
 
-function LightbulbSvg(props) {
+const LightbulbSvg = (props) => {
   return (
     <svg width="56px" height="90px" viewBox="0 0 56 90" version="1.1">
       <defs />
@@ -118,7 +130,7 @@ function LightbulbSvg(props) {
       </g>
     </svg>
   );
-}
+};
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<LightBulb />, rootElement);
