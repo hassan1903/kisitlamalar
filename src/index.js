@@ -1,3 +1,4 @@
+// @flow
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import Select from "react-select";
@@ -66,6 +67,13 @@ function LightBulb() {
               return null;
             })}
           </ul>
+        ) : null}
+        {light !== 0 && selectedCity ? (
+          <h6 className="title">
+            {
+              "Bilgilendirme amaçlıdır, gerçeği yansıtmayabilir, sorumluluk kabul edilmez."
+            }
+          </h6>
         ) : null}
         {light !== 0 && selectedCity ? (
           <h6 className="title">
