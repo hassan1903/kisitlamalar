@@ -37,12 +37,12 @@
     },
     {
       "ruleId": 6,
-      "label": "İlkokullar 2 gün okulda seyreltilmiş sınıflarda yüz yüze 3 gün uzaktan eğitim alacak.",
+      "label": "İlkokullar 2 gün okulda seyreltilmiş sınıflarda yüz yüze, 3 gün uzaktan eğitim alacak.",
       "status": [1, 2, 3, 4]
     },
     {
       "ruleId": 7,
-      "label": "Ortaokul 5, 6, 7.sınıflar 2 gün okulda seyreltilmiş sınıflarda yüz yüze 3 gün uzaktan eğitim alacak.",
+      "label": "Ortaokul 5, 6, 7.sınıflar 2 gün okulda seyreltilmiş sınıflarda yüz yüze, 3 gün uzaktan eğitim alacak.",
       "status": [1, 2]
     },
     {
@@ -82,12 +82,12 @@
     },
     {
       "ruleId": 13,
-      "label": "Restoran, lokanta, kafetarya, tatlıcı pastane kıraathane gibi yerler 07:00-19:00 saatleri arasında %50 kapasite ile açık olacak. Yeme-içme yerleri 19:00-21.00 saatleri arasında paket servisi veya gel-al şeklinde, 21.00-24.00 saatleri arasında ise sadece paket servis şeklinde hizmet verebilecekler.",
+      "label": "Restoran, lokanta, kafetarya, tatlıcı, pastane ve kıraathane gibi yerler 07:00-19:00 saatleri arasında %50 kapasite ile açık olacak. Yeme-içme yerleri 19:00-21.00 saatleri arasında paket servisi veya gel-al şeklinde, 21.00-24.00 saatleri arasında ise sadece paket servis şeklinde hizmet verebilecekler.",
       "status": [1, 2, 3]
     },
     {
       "ruleId": 13,
-      "label": "Restoran, lokanta, kafetarya, tatlıcı pastane kıraathane gibi yerler kapalı olacak. Yeme içme yerleri, 10.00-20.00 saatleri arasında paket servisi veya gel-al şeklinde, 20.00-24.00 saatleri arasında ise sadece paket servis şeklinde hizmet verebilecek olup ayrıca işyeri içerisinde hizmet sunamayacaklar.",
+      "label": "Restoran, lokanta, kafetarya, tatlıcı, pastane ve kıraathane gibi yerler kapalı olacak. Yeme içme yerleri, 10.00-20.00 saatleri arasında paket servisi veya gel-al şeklinde, 20.00-24.00 saatleri arasında ise sadece paket servis şeklinde hizmet verebilecek olup ayrıca işyeri içerisinde hizmet sunamayacaklar.",
       "status": [4]
     },
     {
