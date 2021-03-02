@@ -1,4 +1,3 @@
-// @flow
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import Select from "react-select";
