@@ -17,12 +17,12 @@ const LightBulb = () => {
   const colorCode = [
     {
       key: 1,
-      value: "#3363ff",
+      value: "#0071c1",
       label: "Düşük riskli bölge",
     },
-    { key: 2, value: "#ffbb73", label: "Orta riskli bölge" },
-    { key: 3, value: "#ff7f00", label: "Yüksek riskli bölge" },
-    { key: 4, value: "#ff3933", label: "Çok yüksek riskli bölge" },
+    { key: 2, value: "#f0e513", label: "Orta riskli bölge" },
+    { key: 3, value: "#f8931f", label: "Yüksek riskli bölge" },
+    { key: 4, value: "#df1a23", label: "Çok yüksek riskli bölge" },
   ];
   const fillColor = colorCode.find((element) => element.key === light);
   useEffect(async () => {

@@ -1,10 +1,10 @@
 .App {
-  display: "flex";
+  display: flex;
   flex-direction: column;
   flex: 1;
   justify-content: center;
   align-items: center;
-  font-family: "Architects Daughter";
+  font-family: "Roboto";
 }
 
 .title {
@@ -29,12 +29,14 @@ li {
 li.rule-item-cross:before {
   content: "\292b";
   color: red;
+  font-size: 18px;
   padding-right: 5px;
 }
 
 li.rule-item-check:before {
   content: "\2713";
   color: green;
+  font-size: 16px;
   padding-right: 5px;
 }
 
