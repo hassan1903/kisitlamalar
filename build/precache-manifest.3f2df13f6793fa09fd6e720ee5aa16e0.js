@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/kisitlamalar/static/js/runtime~main.72502309.js"
   },
   {
-    "revision": "e5cca807d34edce19c0db7fa7161a89f",
+    "revision": "98a591e79bb1c026c414ca16759d811b",
     "url": "/kisitlamalar/index.html"
   }
 ];
