@@ -13,11 +13,11 @@ function LightBulb() {
   const colorCode = [
     {
       key: 1,
-      value: "#3363ff"
+      value: "#3363ff",
     },
     { key: 2, value: "#ffbb73" },
     { key: 3, value: "#ff7f00" },
-    { key: 4, value: "#ff3933" }
+    { key: 4, value: "#ff3933" },
   ];
   const fillColor = colorCode.find((element) => element.key === light);
   return (
