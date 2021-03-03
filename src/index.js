@@ -33,7 +33,7 @@ const LightBulb = () => {
     fetch("https://ipapi.co/json/")
       .then((response) => response.json())
       .then((data) => {
-        if (data && data.region_code) {
+        if (data && data.country === "TR" && data.region_code) {
           const currentLocation = cityList.cities.find(
             (element) => element.value === parseInt(data.region_code, 10)
           );

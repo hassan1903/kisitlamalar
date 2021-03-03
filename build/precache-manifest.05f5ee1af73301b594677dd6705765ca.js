@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "f9cd59a235e83e6bc13c",
+    "revision": "167f0457c6ef3119dddb",
     "url": "/kisitlamalar/static/css/main.8d3f15c3.chunk.css"
   },
   {
-    "revision": "f9cd59a235e83e6bc13c",
-    "url": "/kisitlamalar/static/js/main.f9cd59a2.chunk.js"
+    "revision": "167f0457c6ef3119dddb",
+    "url": "/kisitlamalar/static/js/main.167f0457.chunk.js"
   },
   {
     "revision": "fcd58882da3ae7e82d40",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/kisitlamalar/static/js/runtime~main.72502309.js"
   },
   {
-    "revision": "3420e194ef2c4b23665b85332ecf601f",
+    "revision": "ccd89a4cedac45f0978d943d5475f1c9",
     "url": "/kisitlamalar/index.html"
   }
 ];
