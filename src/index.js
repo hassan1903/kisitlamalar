@@ -10,7 +10,11 @@ import "./styles.css";
 
 const LightBulb = () => {
   let [light, setLight] = useState(0);
-  let [selectedCity, setSelectedCity] = useState({ value: "", label: "" });
+  let [selectedCity, setSelectedCity] = useState({
+    value: -1,
+    label: "",
+    status: -1,
+  });
   let ruleId = 1;
   let cityList = citiesList;
   const colorCode = [
@@ -26,7 +30,18 @@ const LightBulb = () => {
   const fillColor = colorCode.find((element) => element.key === light);
   useEffect(async () => {
     cityList = await updateData(cityList);
-  });
+    fetch("https://ipapi.co/json/")
+      .then((response) => response.json())
+      .then((data) => {
+        if (data && data.region_code) {
+          const currentLocation = cityList.cities.find(
+            (element) => element.value === parseInt(data.region_code, 10)
+          );
+          setSelectedCity(currentLocation);
+          setLight(currentLocation.status);
+        }
+      });
+  }, []);
   return (
     <div className="App">
       <h4 className="title">
@@ -42,11 +57,10 @@ const LightBulb = () => {
           placeholder="Şehir seçiniz"
           label={selectedCity}
           options={cityList.cities}
-          onInputChange={(newValue) => {
-            return (
-              newValue.charAt(0).toLocaleUpperCase("tr-TR") + newValue.slice(1)
-            );
-          }}
+          onInputChange={(newValue) =>
+            newValue.charAt(0).toLocaleUpperCase("tr-TR") + newValue.slice(1)
+          }
+          value={selectedCity}
           onChange={(val) => {
             const cityStatus = cityList.cities.find(
               (item) => item.label === val.label
@@ -84,7 +98,7 @@ const LightBulb = () => {
           </ul>
         ) : null}
         {light !== 0 && selectedCity ? (
-          <div class="footercontainer">
+          <div className="footercontainer">
             <h6 className="title">
               {
                 "Bilgilendirme amaçlıdır, gerçeği yansıtmayabilir, sorumluluk kabul edilmez."
@@ -92,10 +106,10 @@ const LightBulb = () => {
             </h6>
             <a
               href="https://twitter.com/intent/tweet?text=Ya%C5%9Fad%C4%B1%C4%9F%C4%B1m%20%C5%9Fehrin%20risk%20grubunu%20ve%20ge%C3%A7erli%20olan%20k%C4%B1s%C4%B1tlamalar%C4%B1%20%C3%B6%C4%9Frendim.%20Sende%20%C3%B6%C4%9Frenmek%20istiyorsan%3B&url=https%3A%2F%2Fhassan1903.github.io%2Fkisitlamalar"
-              class="tweetbutton"
+              className="tweetbutton"
             >
               <TwitterIcon />
-              <span class="tweetlabel">Tweet</span>
+              <span className="tweetlabel">Tweet</span>
             </a>
             <h6 className="title">
               {"Lovely developed by Hasan Kürşat Küçüköztaş"}
