@@ -1,15 +1,13 @@
 {
-  "main.css": "/kisitlamalar/static/css/main.c1564ad9.chunk.css",
-  "main.js": "/kisitlamalar/static/js/main.edb48301.chunk.js",
-  "main.js.map": "/kisitlamalar/static/js/main.edb48301.chunk.js.map",
-  "static/css/1.0b460ffc.chunk.css": "/kisitlamalar/static/css/1.0b460ffc.chunk.css",
-  "static/js/1.dc43c9df.chunk.js": "/kisitlamalar/static/js/1.dc43c9df.chunk.js",
-  "static/js/1.dc43c9df.chunk.js.map": "/kisitlamalar/static/js/1.dc43c9df.chunk.js.map",
+  "main.css": "/kisitlamalar/static/css/main.a847c6f7.chunk.css",
+  "main.js": "/kisitlamalar/static/js/main.b7d15688.chunk.js",
+  "main.js.map": "/kisitlamalar/static/js/main.b7d15688.chunk.js.map",
+  "static/js/1.fcd58882.chunk.js": "/kisitlamalar/static/js/1.fcd58882.chunk.js",
+  "static/js/1.fcd58882.chunk.js.map": "/kisitlamalar/static/js/1.fcd58882.chunk.js.map",
   "runtime~main.js": "/kisitlamalar/static/js/runtime~main.72502309.js",
   "runtime~main.js.map": "/kisitlamalar/static/js/runtime~main.72502309.js.map",
-  "static/css/main.c1564ad9.chunk.css.map": "/kisitlamalar/static/css/main.c1564ad9.chunk.css.map",
-  "static/css/1.0b460ffc.chunk.css.map": "/kisitlamalar/static/css/1.0b460ffc.chunk.css.map",
+  "static/css/main.a847c6f7.chunk.css.map": "/kisitlamalar/static/css/main.a847c6f7.chunk.css.map",
   "index.html": "/kisitlamalar/index.html",
-  "precache-manifest.9444a769c780c4a0eab8917dd0ecb7f3.js": "/kisitlamalar/precache-manifest.9444a769c780c4a0eab8917dd0ecb7f3.js",
+  "precache-manifest.69e3b6248bd93618581a465c46dec326.js": "/kisitlamalar/precache-manifest.69e3b6248bd93618581a465c46dec326.js",
   "service-worker.js": "/kisitlamalar/service-worker.js"
 }
