@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/kisitlamalar/precache-manifest.c588e913b5acccd8ce4c2a06ce7bde03.js"
+  "/kisitlamalar/precache-manifest.b5fcf815162f03bdd30e968f20a5116f.js"
 );
 
 workbox.clientsClaim();
