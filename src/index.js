@@ -12,6 +12,9 @@ import updateData, {
 import moment from "moment";
 import "moment/locale/tr";
 import "./styles.css";
+import ReactGA from "react-ga";
+const TRACKING_ID = "G-6Y2TPZL0RZ";
+ReactGA.initialize(TRACKING_ID);
 const { TabPane } = Tabs;
 const LightBulb = () => {
   const [light, setLight] = useState(0);
