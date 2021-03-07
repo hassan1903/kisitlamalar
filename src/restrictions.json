@@ -1,6 +1,10 @@
 {
     "source": "https:\/\/covid19.saglik.gov.tr\/?lang=tr-TR",
-    "updated": "2021-03-07T19:55:48.928825Z",
+    "updated": {
+        "date": "2021-03-07 22:34:27.572990",
+        "timezone_type": 3,
+        "timezone": "UTC"
+    },
     "data": {
         "current": [
             {
@@ -735,29 +739,6 @@
                 "rate": 64.61
             }
         ],
-        "dailyStatus": [
-            {
-                "tarih": "07.03.2021",
-                "gunluk_test": "129.299",
-                "gunluk_vaka": "11.187",
-                "gunluk_hasta": "735",
-                "gunluk_vefat": "65",
-                "gunluk_iyilesen": "7.785",
-                "toplam_test": "34.122.851",
-                "toplam_hasta": "2.780.417",
-                "toplam_vefat": "29.030",
-                "toplam_iyilesen": "2.623.924",
-                "toplam_yogun_bakim": "",
-                "toplam_entube": "",
-                "hastalarda_zaturre_oran": "3,6",
-                "agir_hasta_sayisi": "1.261",
-                "yatak_doluluk_orani": "49,1",
-                "eriskin_yogun_bakim_doluluk_orani": "63,2",
-                "ventilator_doluluk_orani": "28,3",
-                "ortalama_filyasyon_suresi": "",
-                "ortalama_temasli_tespit_suresi": "8",
-                "filyasyon_orani": "99,9"
-            }
-        ]
+        "dailyStatus": null
     }
 }
