@@ -3,7 +3,7 @@ const cheerio = require("cheerio");
 const updateData = async (cityList) => {
   let newCityList = { ...cityList };
   await fetch("https://covid19.saglik.gov.tr/?lang=tr-TR", {
-    mode: "no-cors"
+    mode: "no-cors",
   })
     .then((response) => response.text())
     .then((data) => {
@@ -25,7 +25,7 @@ const updateData = async (cityList) => {
 export const updateEstimatedData = async (cityEstimatedList) => {
   let newCityListEstimated = { ...cityEstimatedList };
   await fetch("https://covid19.saglik.gov.tr/?lang=tr-TR", {
-    mode: "no-cors"
+    mode: "no-cors",
   })
     .then((response) => response.text())
     .then((data) => {
