@@ -1,8 +1,7 @@
 {
     "source": "https:\/\/covid19.saglik.gov.tr\/?lang=tr-TR",
-    "updated": "2021-03-07T19:52:53.330188Z",
+    "updated": "2021-03-07T19:55:48.928825Z",
     "data": {
-        "test": 1,
         "current": [
             {
                 "label": "Adana",
