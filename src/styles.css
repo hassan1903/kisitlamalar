@@ -74,9 +74,14 @@ ul {
   padding-left: 0;
 }
 
+li.rule-item-check {
+  padding-left: 1em;
+  text-indent: -17px;
+}
+
 li.rule-item-cross {
   padding-left: 1em;
-  text-indent: -1em;
+  text-indent: -17.6px;
 }
 
 li.rule-item-cross:before {
