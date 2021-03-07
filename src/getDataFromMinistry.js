@@ -2,9 +2,13 @@ const cheerio = require("cheerio");
 
 const updateData = async (cityList) => {
   let newCityList = { ...cityList };
-  await fetch("https://covid19.saglik.gov.tr/?lang=tr-TR", {
-    mode: "no-cors",
-  })
+  await fetch(
+    "https://cors-anywhere.herokuapp.com/https://covid19.saglik.gov.tr/?lang=tr-TR",
+    {
+      method: "GET",
+      mode: "cors",
+    }
+  )
     .then((response) => response.text())
     .then((data) => {
       const $ = cheerio.load(data);
@@ -24,9 +28,13 @@ const updateData = async (cityList) => {
 
 export const updateEstimatedData = async (cityEstimatedList) => {
   let newCityListEstimated = { ...cityEstimatedList };
-  await fetch("https://covid19.saglik.gov.tr/?lang=tr-TR", {
-    mode: "no-cors",
-  })
+  await fetch(
+    "https://cors-anywhere.herokuapp.com/https://covid19.saglik.gov.tr/?lang=tr-TR",
+    {
+      method: "GET",
+      mode: "cors",
+    }
+  )
     .then((response) => response.text())
     .then((data) => {
       const $ = cheerio.load(data);
