@@ -48,11 +48,11 @@ const LightBulb = () => {
   ];
   const fillColor = colorCode.find((element) => element.key === light);
   useEffect(async () => {
-    //const newEstimatedCityList = await updateEstimatedData(estimatedCityList);
-    //const newCityList = await updateData(cityList);
+    const newEstimatedCityList = await updateEstimatedData(estimatedCityList);
+    const newCityList = await updateData(cityList);
     const newRegionCode = await getRegionCode();
-    //setCityList(newCityList);
-    //setEstimatedCityList(newEstimatedCityList);
+    setCityList(newCityList);
+    setEstimatedCityList(newEstimatedCityList);
     setRegionCode(newRegionCode);
     setSpinning(false);
   }, []);
