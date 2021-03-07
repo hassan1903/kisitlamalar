@@ -1,7 +1,8 @@
 {
     "source": "https:\/\/covid19.saglik.gov.tr\/TR-66935\/genel-koronavirus-tablosu.html",
-    "updated": "2021-03-07T19:52:53.320569Z",
+    "updated": "2021-03-07T19:56:14.611719Z",
     "data": {
+        "test": 1,
         "generalStatus": [
             {
                 "tarih": "07.03.2021",
