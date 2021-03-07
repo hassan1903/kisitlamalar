@@ -76,12 +76,12 @@ ul {
 
 li.rule-item-check {
   padding-left: 1em;
-  text-indent: -17px;
+  text-indent: -18px;
 }
 
 li.rule-item-cross {
   padding-left: 1em;
-  text-indent: -17.6px;
+  text-indent: -16px;
 }
 
 li.rule-item-cross:before {
