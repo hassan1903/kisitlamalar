@@ -1,22 +1,41 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
-import Select from "react-select";
+import "antd/dist/antd.css";
+import { Tabs, Select, Spin } from "antd";
 import citiesList from "./city.json";
+import nextCitiesList from "./city.json";
 import ruleList from "./rules.json";
-import updateData from "./getDataFromMinistry.js";
+import updateData, {
+  updateEstimatedData,
+  getRegionCode,
+} from "./getDataFromMinistry.js";
 import moment from "moment";
 import "moment/locale/tr";
 import "./styles.css";
-
+const { TabPane } = Tabs;
 const LightBulb = () => {
-  let [light, setLight] = useState(0);
-  let [selectedCity, setSelectedCity] = useState({
+  const [light, setLight] = useState(0);
+  const [regionCode, setRegionCode] = useState(0);
+  const [spinning, setSpinning] = useState(true);
+  const [cityList, setCityList] = useState(
+    Object.assign({}, JSON.parse(JSON.stringify(citiesList)))
+  );
+  const [estimatedCityList, setEstimatedCityList] = useState(
+    Object.assign({}, JSON.parse(JSON.stringify(nextCitiesList)))
+  );
+  const [selectedCity, setSelectedCity] = useState({
+    value: -1,
+    label: "",
+    status: -1,
+  });
+  const [selectedEstimatedCity, setSelectedEstimatedCity] = useState({
     value: -1,
     label: "",
     status: -1,
   });
   let ruleId = 1;
-  let cityList = citiesList;
+  let ruleIdTab2 = 1;
+
   const colorCode = [
     {
       key: 1,
@@ -29,94 +48,223 @@ const LightBulb = () => {
   ];
   const fillColor = colorCode.find((element) => element.key === light);
   useEffect(async () => {
-    cityList = await updateData(cityList);
-    fetch("https://ipapi.co/json/")
-      .then((response) => response.json())
-      .then((data) => {
-        if (data && data.country === "TR" && data.region_code) {
-          const currentLocation = cityList.cities.find(
-            (element) => element.value === parseInt(data.region_code, 10)
-          );
-          setSelectedCity(currentLocation);
-          setLight(currentLocation.status);
-        }
-      });
+    const newEstimatedCityList = await updateEstimatedData(estimatedCityList);
+    const newCityList = await updateData(cityList);
+    const newRegionCode = await getRegionCode();
+    setCityList(newCityList);
+    setEstimatedCityList(newEstimatedCityList);
+    setRegionCode(newRegionCode);
+    setSpinning(false);
   }, []);
+  useEffect(() => {
+    if (regionCode) {
+      const currentLocation = cityList.cities.find(
+        (element) => element.value === parseInt(regionCode, 10)
+      );
+      const currentEstimatedLocation = estimatedCityList.cities.find(
+        (element) => element.value === parseInt(regionCode, 10)
+      );
+      setSelectedCity(currentLocation);
+      setSelectedEstimatedCity(currentEstimatedLocation);
+      setLight(currentLocation.status);
+    }
+  }, [regionCode]);
   return (
     <div className="App">
-      <h4 className="title">
-        {moment()
-          .locale("tr")
-          .format("LL") + " tarihi illere göre güncel kısıtlama kuralları"}
-      </h4>
-      <div style={{ paddingTop: 20, paddingBottom: 50, textAlign: "center" }}>
-        <LightbulbSvg fillColor={fillColor ? fillColor.value : "#000"} />
-      </div>
-      <div className="container">
-        <Select
-          placeholder="Şehir seçiniz"
-          label={selectedCity}
-          options={cityList.cities}
-          onInputChange={(newValue) =>
-            newValue.charAt(0).toLocaleUpperCase("tr-TR") + newValue.slice(1)
-          }
-          value={selectedCity}
-          onChange={(val) => {
-            const cityStatus = cityList.cities.find(
-              (item) => item.label === val.label
+      <Tabs
+        defaultActiveKey="1"
+        onChange={(key) => {
+          if (key === "2") {
+            const cityStatus = estimatedCityList.cities.find(
+              (item) => item.label === selectedEstimatedCity.label
             );
             setLight(cityStatus.status);
-            setSelectedCity(val);
-          }}
-        />
-        {light !== 0 && selectedCity ? (
-          <h3 className="title" style={{ color: colorCode[light - 1].value }}>
-            {colorCode[light - 1].label}
-          </h3>
-        ) : null}
-        {light !== 0 ? (
-          <ul>
-            {ruleList.rules.map((el) => {
-              if (el.ruleId === ruleId) {
-                const index = el.status.indexOf(light);
-                if (index > -1) {
-                  ruleId++;
-                  return (
-                    <li
-                      key={ruleId}
-                      style={{ paddingBottom: 10 }}
-                      className={"rule-item-" + el.icon}
-                    >
-                      {el.label}
-                    </li>
-                  );
-                }
-                return null;
-              }
-              return null;
-            })}
-          </ul>
-        ) : null}
-        {light !== 0 && selectedCity ? (
-          <div className="footercontainer">
-            <h6 className="title">
-              {
-                "Bilgilendirme amaçlıdır, gerçeği yansıtmayabilir, sorumluluk kabul edilmez."
-              }
-            </h6>
-            <a
-              href="https://twitter.com/intent/tweet?text=Ya%C5%9Fad%C4%B1%C4%9F%C4%B1m%20%C5%9Fehrin%20risk%20grubunu%20ve%20ge%C3%A7erli%20olan%20k%C4%B1s%C4%B1tlamalar%C4%B1%20%C3%B6%C4%9Frendim.%20Sende%20%C3%B6%C4%9Frenmek%20istiyorsan%3B&url=https%3A%2F%2Fhassan1903.github.io%2Fkisitlamalar"
-              className="tweetbutton"
-            >
-              <TwitterIcon />
-              <span className="tweetlabel">Tweet</span>
-            </a>
-            <h6 className="title">
-              {"Lovely developed by Hasan Kürşat Küçüköztaş"}
-            </h6>
+            setSelectedEstimatedCity(cityStatus);
+          } else {
+            const cityStatus = cityList.cities.find(
+              (item) => item.label === selectedCity.label
+            );
+            setLight(cityStatus.status);
+            setSelectedCity(cityStatus);
+          }
+        }}
+      >
+        <TabPane tab="Mevcut kısıtlama" key="1">
+          <h4 className="title">
+            {moment()
+              .locale("tr")
+              .format("LL") + " tarihi illere göre güncel kısıtlama kuralları"}
+          </h4>
+          <div
+            style={{ paddingTop: 20, paddingBottom: 50, textAlign: "center" }}
+          >
+            <LightbulbSvg fillColor={fillColor ? fillColor.value : "#000"} />
           </div>
-        ) : null}
-      </div>
+          <div className="container">
+            <Select
+              showSearch
+              style={{ width: "100%" }}
+              placeholder="Şehir Seçiniz"
+              onChange={(val) => {
+                const cityStatus = cityList.cities.find(
+                  (item) => item.value === val
+                );
+                setLight(cityStatus.status);
+                setSelectedCity(cityStatus);
+              }}
+              options={cityList.cities}
+              value={selectedCity.value > 0 ? selectedCity.value : undefined}
+              optionFilterProp="children"
+              filterOption={(input, option) =>
+                option.label
+                  .toLocaleUpperCase("tr-TR")
+                  .indexOf(input.toLocaleUpperCase("tr-TR")) >= 0
+              }
+            />
+            {light !== 0 && selectedCity ? (
+              <h2
+                className="title"
+                style={{ color: colorCode[light - 1].value }}
+              >
+                {colorCode[light - 1].label}
+              </h2>
+            ) : null}
+            <div className={spinning ? "loader" : "loader-hide"}>
+              <Spin spinning={spinning} size="large" />
+            </div>
+            {light !== 0 ? (
+              <ul>
+                {ruleList.rules.map((el) => {
+                  if (el.ruleId === ruleId) {
+                    const index = el.status.indexOf(light);
+                    if (index > -1) {
+                      ruleId++;
+                      return (
+                        <li
+                          key={"tab1" + ruleId}
+                          style={{ paddingBottom: 10 }}
+                          className={"rule-item-" + el.icon}
+                        >
+                          {el.label}
+                        </li>
+                      );
+                    }
+                    return null;
+                  }
+                  return null;
+                })}
+              </ul>
+            ) : null}
+            {light !== 0 && selectedCity ? (
+              <div className="footercontainer">
+                <h5 className="titleH5WithoutPadding">
+                  {
+                    "Bilgilendirme amaçlıdır, gerçeği yansıtmayabilir, sorumluluk kabul edilmez."
+                  }
+                </h5>
+                <a
+                  href="https://twitter.com/intent/tweet?text=Ya%C5%9Fad%C4%B1%C4%9F%C4%B1m%20%C5%9Fehrin%20risk%20grubunu%20ve%20ge%C3%A7erli%20olan%20k%C4%B1s%C4%B1tlamalar%C4%B1%20%C3%B6%C4%9Frendim.%20Sende%20%C3%B6%C4%9Frenmek%20istiyorsan%3B&url=https%3A%2F%2Fhassan1903.github.io%2Fkisitlamalar"
+                  className="tweetbutton"
+                >
+                  <TwitterIcon />
+                  <span className="tweetlabel">Tweet</span>
+                </a>
+                <h5 className="titleH5">
+                  {"Lovely developed by Hasan Kürşat Küçüköztaş"}
+                </h5>
+              </div>
+            ) : null}
+          </div>
+        </TabPane>
+        <TabPane tab="Tahmini kısıtlama" key="2">
+          <h4 className="title">
+            {moment()
+              .locale("tr")
+              .format("LL") + " tarihi illere göre tahmini kısıtlama kuralları"}
+          </h4>
+          <div
+            style={{ paddingTop: 20, paddingBottom: 50, textAlign: "center" }}
+          >
+            <LightbulbSvg fillColor={fillColor ? fillColor.value : "#000"} />
+          </div>
+          <div className="container">
+            <Select
+              showSearch
+              style={{ width: "100%" }}
+              placeholder="Şehir Seçiniz"
+              onChange={(val) => {
+                const cityStatus = estimatedCityList.cities.find(
+                  (item) => item.value === val
+                );
+                setLight(cityStatus.status);
+                setSelectedEstimatedCity(cityStatus);
+              }}
+              options={estimatedCityList.cities}
+              value={
+                selectedEstimatedCity.value > 0
+                  ? selectedEstimatedCity.value
+                  : undefined
+              }
+              optionFilterProp="children"
+              filterOption={(input, option) =>
+                option.label
+                  .toLocaleUpperCase("tr-TR")
+                  .indexOf(input.toLocaleUpperCase("tr-TR")) >= 0
+              }
+            />
+            {light !== 0 && selectedEstimatedCity ? (
+              <h2
+                className="title"
+                style={{ color: colorCode[light - 1].value }}
+              >
+                {colorCode[light - 1].label}
+              </h2>
+            ) : null}
+            {light !== 0 ? (
+              <ul>
+                {ruleList.rules.map((el) => {
+                  if (el.ruleId === ruleIdTab2) {
+                    const index = el.status.indexOf(light);
+                    if (index > -1) {
+                      ruleIdTab2++;
+                      return (
+                        <li
+                          key={"tab2" + ruleIdTab2}
+                          style={{ paddingBottom: 10 }}
+                          className={"rule-item-" + el.icon}
+                        >
+                          {el.label}
+                        </li>
+                      );
+                    }
+                    return null;
+                  }
+                  return null;
+                })}
+              </ul>
+            ) : null}
+            {light !== 0 && selectedEstimatedCity ? (
+              <div className="footercontainer">
+                <h5 className="titleH5WithoutPadding">
+                  {
+                    "Bilgilendirme amaçlıdır, gerçeği yansıtmayabilir, sorumluluk kabul edilmez."
+                  }
+                </h5>
+                <a
+                  href="https://twitter.com/intent/tweet?text=Ya%C5%9Fad%C4%B1%C4%9F%C4%B1m%20%C5%9Fehrin%20risk%20grubunu%20ve%20ge%C3%A7erli%20olan%20k%C4%B1s%C4%B1tlamalar%C4%B1%20%C3%B6%C4%9Frendim.%20Sende%20%C3%B6%C4%9Frenmek%20istiyorsan%3B&url=https%3A%2F%2Fhassan1903.github.io%2Fkisitlamalar"
+                  className="tweetbutton"
+                >
+                  <TwitterIcon />
+                  <span className="tweetlabel">Tweet</span>
+                </a>
+                <h5 className="titleH5">
+                  {"Lovely developed by Hasan Kürşat Küçüköztaş"}
+                </h5>
+              </div>
+            ) : null}
+          </div>
+        </TabPane>
+      </Tabs>
     </div>
   );
 };
