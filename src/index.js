@@ -178,9 +178,7 @@ const LightBulb = () => {
         </TabPane>
         <TabPane tab="Vakalara göre tahmini kısıtlamalar" key="2">
           <h4 className="title">
-            {moment()
-              .locale("tr")
-              .format("LL") + " tarihi illere göre tahmini kısıtlama kuralları"}
+            {"12 Mart 2021 tarihi illere göre tahmini kısıtlama kuralları"}
           </h4>
           <div
             style={{ paddingTop: 20, paddingBottom: 50, textAlign: "center" }}
