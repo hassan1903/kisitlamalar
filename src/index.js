@@ -29,7 +29,7 @@ const LightBulb = () => {
   ];
   const fillColor = colorCode.find((element) => element.key === light);
   useEffect(async () => {
-    cityList = await updateData(cityList);
+    // cityList = await updateData(cityList);
     fetch("https://ipapi.co/json/")
       .then((response) => response.json())
       .then((data) => {
