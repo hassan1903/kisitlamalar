@@ -89,7 +89,7 @@ const LightBulb = () => {
           }
         }}
       >
-        <TabPane tab="Mevcut kısıtlama" key="1">
+        <TabPane tab="Geçerli kısıtlamalar" key="1">
           <h4 className="title">
             {moment()
               .locale("tr")
@@ -176,7 +176,7 @@ const LightBulb = () => {
             ) : null}
           </div>
         </TabPane>
-        <TabPane tab="Tahmini kısıtlama" key="2">
+        <TabPane tab="Vakalara göre tahmini kısıtlamalar" key="2">
           <h4 className="title">
             {moment()
               .locale("tr")
