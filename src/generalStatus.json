@@ -1,12 +1,34 @@
 {
     "source": "https:\/\/covid19.saglik.gov.tr\/TR-66935\/genel-koronavirus-tablosu.html",
     "updated": {
-        "date": "2021-03-12 18:00:01.401129",
+        "date": "2021-03-13 16:00:02.007720",
         "timezone_type": 3,
         "timezone": "UTC"
     },
     "data": {
         "generalStatus": [
+            {
+                "tarih": "13.03.2021",
+                "gunluk_test": "150098",
+                "gunluk_vaka": "15082",
+                "gunluk_hasta": "841",
+                "gunluk_vefat": "65",
+                "gunluk_iyilesen": "15287",
+                "toplam_test": "34993578",
+                "toplam_hasta": "2866012",
+                "toplam_vefat": "29421",
+                "toplam_iyilesen": "2685560",
+                "toplam_yogun_bakim": "",
+                "toplam_entube": "",
+                "hastalarda_zaturre_oran": "3,8",
+                "agir_hasta_sayisi": "1.350",
+                "yatak_doluluk_orani": "51,5",
+                "eriskin_yogun_bakim_doluluk_orani": "62,4",
+                "ventilator_doluluk_orani": "31,0",
+                "ortalama_filyasyon_suresi": "",
+                "ortalama_temasli_tespit_suresi": "8",
+                "filyasyon_orani": "99,9"
+            },
             {
                 "tarih": "12.03.2021",
                 "gunluk_test": "148856",
