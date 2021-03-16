@@ -1,7 +1,7 @@
 {
     "source": "https:\/\/covid19.saglik.gov.tr\/?lang=tr-TR",
     "updated": {
-        "date": "2021-03-07 23:01:47.377841",
+        "date": "2021-03-16 13:00:03.059790",
         "timezone_type": 3,
         "timezone": "UTC"
     },
@@ -418,487 +418,487 @@
                 "label": "Adana",
                 "value": 1,
                 "status": 3,
-                "rate": 53.22
+                "rate": 63
             },
             {
                 "label": "Adıyaman",
                 "value": 2,
                 "status": 4,
-                "rate": 140.88
+                "rate": 154.63
             },
             {
                 "label": "Afyon",
                 "value": 3,
                 "status": 2,
-                "rate": 47.63
+                "rate": 47.5
             },
             {
                 "label": "Ağrı",
                 "value": 4,
                 "status": 2,
-                "rate": 24.47
+                "rate": 22.22
             },
             {
                 "label": "Aksaray",
                 "value": 68,
                 "status": 4,
-                "rate": 140.89
+                "rate": 173.52
             },
             {
                 "label": "Amasya",
                 "value": 5,
                 "status": 4,
-                "rate": 183.91
+                "rate": 163.64
             },
             {
                 "label": "Ankara",
                 "value": 6,
                 "status": 3,
-                "rate": 54.83
+                "rate": 68.53
             },
             {
                 "label": "Antalya",
                 "value": 7,
                 "status": 3,
-                "rate": 82.05
+                "rate": 95.16
             },
             {
                 "label": "Ardahan",
                 "value": 75,
                 "status": 3,
-                "rate": 70.71
+                "rate": 73.83
             },
             {
                 "label": "Artvin",
                 "value": 8,
                 "status": 4,
-                "rate": 109.14
+                "rate": 100.88
             },
             {
                 "label": "Aydın",
                 "value": 9,
-                "status": 2,
-                "rate": 49.42
+                "status": 3,
+                "rate": 58.71
             },
             {
                 "label": "Balıkesir",
                 "value": 10,
                 "status": 4,
-                "rate": 172.46
+                "rate": 257.6
             },
             {
                 "label": "Bartın",
                 "value": 74,
                 "status": 3,
-                "rate": 75.89
+                "rate": 62.82
             },
             {
                 "label": "Batman",
                 "value": 72,
                 "status": 1,
-                "rate": 8.87
+                "rate": 15.64
             },
             {
                 "label": "Bayburt",
                 "value": 69,
-                "status": 2,
-                "rate": 39.07
+                "status": 3,
+                "rate": 51.28
             },
             {
                 "label": "Bilecik",
                 "value": 11,
                 "status": 3,
-                "rate": 65.38
+                "rate": 81.38
             },
             {
                 "label": "Bingöl",
                 "value": 12,
-                "status": 1,
-                "rate": 17.04
+                "status": 2,
+                "rate": 25.2
             },
             {
                 "label": "Bitlis",
                 "value": 13,
-                "status": 2,
-                "rate": 29.06
+                "status": 1,
+                "rate": 15.95
             },
             {
                 "label": "Bolu",
                 "value": 14,
                 "status": 3,
-                "rate": 68.3
+                "rate": 65.76
             },
             {
                 "label": "Burdur",
                 "value": 15,
-                "status": 4,
-                "rate": 105.21
+                "status": 3,
+                "rate": 86.49
             },
             {
                 "label": "Bursa",
                 "value": 16,
                 "status": 3,
-                "rate": 58.55
+                "rate": 78.47
             },
             {
                 "label": "Çanakkale",
                 "value": 17,
                 "status": 4,
-                "rate": 107.29
+                "rate": 149.76
             },
             {
                 "label": "Çankırı",
                 "value": 18,
                 "status": 2,
-                "rate": 22.87
+                "rate": 47.29
             },
             {
                 "label": "Çorum",
                 "value": 19,
-                "status": 2,
-                "rate": 44.71
+                "status": 3,
+                "rate": 73.19
             },
             {
                 "label": "Denizli",
                 "value": 20,
                 "status": 2,
-                "rate": 38.81
+                "rate": 41.5
             },
             {
                 "label": "Diyarbakır",
                 "value": 21,
                 "status": 1,
-                "rate": 19.85
+                "rate": 17.83
             },
             {
                 "label": "Düzce",
                 "value": 81,
                 "status": 3,
-                "rate": 55.6
+                "rate": 81.63
             },
             {
                 "label": "Edirne",
                 "value": 22,
                 "status": 4,
-                "rate": 180.01
+                "rate": 200.36
             },
             {
                 "label": "Elazığ",
                 "value": 23,
                 "status": 2,
-                "rate": 35.72
+                "rate": 29.59
             },
             {
                 "label": "Erzincan",
                 "value": 24,
-                "status": 2,
-                "rate": 31.14
+                "status": 3,
+                "rate": 53.75
             },
             {
                 "label": "Erzurum",
                 "value": 25,
-                "status": 3,
-                "rate": 52.22
+                "status": 2,
+                "rate": 45.63
             },
             {
                 "label": "Eskişehir",
                 "value": 26,
-                "status": 2,
-                "rate": 48.27
+                "status": 3,
+                "rate": 74.59
             },
             {
                 "label": "Gaziantep",
                 "value": 27,
-                "status": 2,
-                "rate": 44.4
+                "status": 3,
+                "rate": 67.44
             },
             {
                 "label": "Giresun",
                 "value": 28,
                 "status": 4,
-                "rate": 282.14
+                "rate": 296.84
             },
             {
                 "label": "Gümüşhane",
                 "value": 29,
                 "status": 4,
-                "rate": 151.73
+                "rate": 137.61
             },
             {
                 "label": "Hakkari",
                 "value": 30,
                 "status": 1,
-                "rate": 5.35
+                "rate": 7.84
             },
             {
                 "label": "Hatay",
                 "value": 31,
                 "status": 3,
-                "rate": 61.95
+                "rate": 69.43
             },
             {
                 "label": "Iğdır",
                 "value": 76,
-                "status": 2,
-                "rate": 24.84
+                "status": 3,
+                "rate": 80.97
             },
             {
                 "label": "Isparta",
                 "value": 32,
-                "status": 2,
-                "rate": 47.24
+                "status": 3,
+                "rate": 61.09
             },
             {
                 "label": "İstanbul",
                 "value": 34,
                 "status": 4,
-                "rate": 111.57
+                "rate": 178.25
             },
             {
                 "label": "İzmir",
                 "value": 35,
                 "status": 3,
-                "rate": 66.47
+                "rate": 78.57
             },
             {
                 "label": "Kahramanmaraş",
                 "value": 46,
-                "status": 2,
-                "rate": 41.52
+                "status": 3,
+                "rate": 56.5
             },
             {
                 "label": "Karabük",
                 "value": 78,
                 "status": 2,
-                "rate": 41.46
+                "rate": 47.21
             },
             {
                 "label": "Karaman",
                 "value": 70,
                 "status": 3,
-                "rate": 55.31
+                "rate": 56.88
             },
             {
                 "label": "Kars",
                 "value": 36,
                 "status": 2,
-                "rate": 25.27
+                "rate": 24.92
             },
             {
                 "label": "Kastamonu",
                 "value": 37,
-                "status": 3,
-                "rate": 65.63
+                "status": 4,
+                "rate": 118.23
             },
             {
                 "label": "Kayseri",
                 "value": 38,
-                "status": 3,
-                "rate": 97.72
+                "status": 4,
+                "rate": 142.95
             },
             {
                 "label": "Kırıkkale",
                 "value": 71,
                 "status": 3,
-                "rate": 62.43
+                "rate": 88.27
             },
             {
                 "label": "Kırklareli",
                 "value": 39,
                 "status": 4,
-                "rate": 116.94
+                "rate": 137.12
             },
             {
                 "label": "Kırşehir",
                 "value": 40,
                 "status": 2,
-                "rate": 40.32
+                "rate": 47.73
             },
             {
                 "label": "Kilis",
                 "value": 79,
                 "status": 4,
-                "rate": 163.17
+                "rate": 255.62
             },
             {
                 "label": "Kocaeli",
                 "value": 41,
                 "status": 4,
-                "rate": 112.25
+                "rate": 138.39
             },
             {
                 "label": "Konya",
                 "value": 42,
                 "status": 4,
-                "rate": 150.98
+                "rate": 203.91
             },
             {
                 "label": "Kütahya",
                 "value": 43,
                 "status": 3,
-                "rate": 85.31
+                "rate": 85.14
             },
             {
                 "label": "Malatya",
                 "value": 44,
                 "status": 3,
-                "rate": 53.22
+                "rate": 92.66
             },
             {
                 "label": "Manisa",
                 "value": 45,
                 "status": 3,
-                "rate": 50.81
+                "rate": 50.12
             },
             {
                 "label": "Mardin",
                 "value": 47,
                 "status": 1,
-                "rate": 10.88
+                "rate": 17.32
             },
             {
                 "label": "Mersin",
                 "value": 33,
-                "status": 4,
-                "rate": 100.82
+                "status": 3,
+                "rate": 96.75
             },
             {
                 "label": "Muğla",
                 "value": 48,
                 "status": 3,
-                "rate": 65.75
+                "rate": 80.24
             },
             {
                 "label": "Muş",
                 "value": 49,
                 "status": 2,
-                "rate": 23.84
+                "rate": 27.24
             },
             {
                 "label": "Nevşehir",
                 "value": 50,
-                "status": 2,
-                "rate": 35.41
+                "status": 3,
+                "rate": 64.6
             },
             {
                 "label": "Niğde",
                 "value": 51,
                 "status": 3,
-                "rate": 82.58
+                "rate": 89.21
             },
             {
                 "label": "Ordu",
                 "value": 52,
                 "status": 4,
-                "rate": 280.27
+                "rate": 248.62
             },
             {
                 "label": "Osmaniye",
                 "value": 80,
                 "status": 4,
-                "rate": 173.91
+                "rate": 198.89
             },
             {
                 "label": "Rize",
                 "value": 53,
                 "status": 4,
-                "rate": 208.21
+                "rate": 188.18
             },
             {
                 "label": "Sakarya",
                 "value": 54,
-                "status": 4,
-                "rate": 139.93
+                "status": 3,
+                "rate": 90.15
             },
             {
                 "label": "Samsun",
                 "value": 55,
                 "status": 4,
-                "rate": 348.36
+                "rate": 458.53
             },
             {
                 "label": "Siirt",
                 "value": 56,
                 "status": 1,
-                "rate": 12.08
+                "rate": 2.11
             },
             {
                 "label": "Sinop",
                 "value": 57,
                 "status": 4,
-                "rate": 314.15
+                "rate": 345.56
             },
             {
                 "label": "Sivas",
                 "value": 58,
                 "status": 2,
-                "rate": 24.06
+                "rate": 43.88
             },
             {
                 "label": "Şanlıurfa",
                 "value": 63,
                 "status": 1,
-                "rate": 16.03
+                "rate": 15.41
             },
             {
                 "label": "Şırnak",
                 "value": 73,
                 "status": 1,
-                "rate": 5.76
+                "rate": 4.46
             },
             {
                 "label": "Tekirdağ",
                 "value": 59,
                 "status": 4,
-                "rate": 111.19
+                "rate": 121.64
             },
             {
                 "label": "Tokat",
                 "value": 60,
                 "status": 4,
-                "rate": 228.82
+                "rate": 243.53
             },
             {
                 "label": "Trabzon",
                 "value": 61,
                 "status": 4,
-                "rate": 226.14
+                "rate": 222.32
             },
             {
                 "label": "Tunceli",
                 "value": 62,
-                "status": 2,
-                "rate": 26.37
+                "status": 3,
+                "rate": 53.93
             },
             {
                 "label": "Uşak",
                 "value": 64,
                 "status": 1,
-                "rate": 10.83
+                "rate": 19.22
             },
             {
                 "label": "Van",
                 "value": 65,
-                "status": 1,
-                "rate": 17.49
+                "status": 2,
+                "rate": 20.36
             },
             {
                 "label": "Yalova",
                 "value": 77,
                 "status": 4,
-                "rate": 134.76
+                "rate": 200.33
             },
             {
                 "label": "Yozgat",
                 "value": 66,
                 "status": 2,
-                "rate": 35.55
+                "rate": 46.05
             },
             {
                 "label": "Zonguldak",
                 "value": 67,
                 "status": 3,
-                "rate": 64.61
+                "rate": 75.44
             }
         ],
         "dailyStatus": null
