@@ -1,7 +1,18 @@
 import React, { useState, useEffect } from "react";
+import {
+  ResponsiveContainer,
+  BarChart,
+  CartesianGrid,
+  XAxis,
+  YAxis,
+  Tooltip,
+  Legend,
+  Bar,
+} from "recharts";
 import ReactDOM from "react-dom";
 import "antd/dist/antd.css";
-import { Tabs, Select, Spin } from "antd";
+import { Tabs, Select, Spin, Table } from "antd";
+import genaralStatusList from "./generalStatus.json";
 import citiesList from "./city.json";
 import nextCitiesList from "./estimated.json";
 import ruleList from "./rules.json";
@@ -49,6 +60,103 @@ const LightBulb = () => {
     { key: 3, value: "#f8931f", label: "Yüksek riskli bölge" },
     { key: 4, value: "#df1a23", label: "Çok yüksek riskli bölge" },
   ];
+  const columns = [
+    { title: "Tarih", dataIndex: "tarih", key: "tarih" },
+    {
+      title: "Bugünkü Hasta Sayısı",
+      dataIndex: "gunluk_hasta",
+      key: "gunluk_hasta",
+      render: (text) => (
+        <p style={{ margin: 0 }}>
+          {text.replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+        </p>
+      ),
+    },
+    {
+      title: "Bugünkü Vefat Sayısı",
+      dataIndex: "gunluk_vefat",
+      key: "gunluk_vefat",
+      render: (text) => (
+        <p style={{ margin: 0 }}>
+          {text.replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+        </p>
+      ),
+    },
+    {
+      title: "Bugünkü Vaka Sayısı",
+      dataIndex: "gunluk_vaka",
+      key: "gunluk_vaka",
+      render: (text) => (
+        <p style={{ margin: 0 }}>
+          {text.replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+        </p>
+      ),
+    },
+    {
+      title: "Bugünkü İyileşen Sayısı",
+      dataIndex: "gunluk_iyilesen",
+      key: "gunluk_iyilesen",
+      render: (text) => (
+        <p style={{ margin: 0 }}>
+          {text.replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+        </p>
+      ),
+    },
+    {
+      title: "Bugünkü Test Sayısı",
+      dataIndex: "gunluk_test",
+      key: "gunluk_test",
+      render: (text) => (
+        <p style={{ margin: 0 }}>
+          {text.replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+        </p>
+      ),
+    },
+    {
+      title: "Toplam Test Sayısı",
+      dataIndex: "toplam_test",
+      key: "toplam_test",
+      responsive: ["md"],
+      render: (text) => (
+        <p style={{ margin: 0 }}>
+          {text.replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+        </p>
+      ),
+    },
+    {
+      title: "Toplam Vaka Sayısı",
+      dataIndex: "toplam_hasta",
+      key: "toplam_hasta",
+      responsive: ["md"],
+      render: (text) => (
+        <p style={{ margin: 0 }}>
+          {text.replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+        </p>
+      ),
+    },
+    {
+      title: "Toplam Vefat Sayısı",
+      dataIndex: "toplam_vefat",
+      key: "toplam_vefat",
+      responsive: ["md"],
+      render: (text) => (
+        <p style={{ margin: 0 }}>
+          {text.replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+        </p>
+      ),
+    },
+    {
+      title: "Toplam İyileşen Hasta Sayısı",
+      dataIndex: "toplam_iyilesen",
+      key: "toplam_iyilesen",
+      responsive: ["md"],
+      render: (text) => (
+        <p style={{ margin: 0 }}>
+          {text.replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+        </p>
+      ),
+    },
+  ];
   const fillColor = colorCode.find((element) => element.key === light);
   useEffect(async () => {
     try {
@@ -83,14 +191,18 @@ const LightBulb = () => {
             const cityStatus = estimatedCityList.cities.find(
               (item) => item.label === selectedEstimatedCity.label
             );
-            setLight(cityStatus.status);
-            setSelectedEstimatedCity(cityStatus);
-          } else {
+            if (cityStatus) {
+              setLight(cityStatus.status);
+              setSelectedEstimatedCity(cityStatus);
+            }
+          } else if (key === "1") {
             const cityStatus = cityList.cities.find(
               (item) => item.label === selectedCity.label
             );
-            setLight(cityStatus.status);
-            setSelectedCity(cityStatus);
+            if (cityStatus) {
+              setLight(cityStatus.status);
+              setSelectedEstimatedCity(cityStatus);
+            }
           }
         }}
       >
@@ -181,7 +293,7 @@ const LightBulb = () => {
             ) : null}
           </div>
         </TabPane>
-        <TabPane tab="Vakalara göre tahmini kısıtlamalar" key="2">
+        <TabPane tab="Tahmini kısıtlamalar" key="2">
           <h4 className="title">
             {"12 Mart 2021 tarihi illere göre tahmini kısıtlama kuralları"}
           </h4>
@@ -266,6 +378,100 @@ const LightBulb = () => {
               </div>
             ) : null}
           </div>
+        </TabPane>
+        <TabPane tab="Vaka Sayıları" key="3">
+          <ResponsiveContainer width={"100%"} height={200}>
+            <BarChart
+              data={genaralStatusList.data.generalStatus.slice(0, 14).reverse()}
+              margin={{
+                top: 10,
+                right: 60,
+                left: 0,
+                bottom: 10,
+              }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="tarih" />
+              <YAxis />
+              <Tooltip />
+              <Legend align="left" iconType="circle" />
+              <Bar name="Günlük Hasta" dataKey="gunluk_hasta" fill="#ffd700" />
+              <Bar name="Günlük Vefat" dataKey="gunluk_vefat" fill="#ffb14e" />
+              <Bar name="Günlük Vaka" dataKey="gunluk_vaka" fill="#fa8775" />
+              <Bar
+                name="Günlük İyileşen"
+                dataKey="gunluk_iyilesen"
+                fill="#ea5f94"
+              />
+            </BarChart>
+          </ResponsiveContainer>
+          <Table
+            columns={columns}
+            expandable={{
+              expandedRowRender: (record) => (
+                <>
+                  {window.outerWidth < 600 ? (
+                    <>
+                      <p style={{ margin: 0 }}>
+                        {"Toplam Test Sayısı: " +
+                          record.toplam_test.replace(
+                            /\B(?=(\d{3})+(?!\d))/g,
+                            ","
+                          )}
+                      </p>
+                      <p style={{ margin: 0 }}>
+                        {"Toplam Vaka Sayısı: " +
+                          record.toplam_hasta.replace(
+                            /\B(?=(\d{3})+(?!\d))/g,
+                            ","
+                          )}
+                      </p>
+                      <p style={{ margin: 0 }}>
+                        {"Toplam Vefat Sayısı: " +
+                          record.toplam_vefat.replace(
+                            /\B(?=(\d{3})+(?!\d))/g,
+                            ","
+                          )}
+                      </p>
+                      <p style={{ margin: 0 }}>
+                        {"Toplam İyileşen Hasta Sayısı: " +
+                          record.toplam_iyilesen.replace(
+                            /\B(?=(\d{3})+(?!\d))/g,
+                            ","
+                          )}
+                      </p>
+                    </>
+                  ) : null}
+                  <p style={{ margin: 0 }}>
+                    {"Ağır Hasta Sayısı: " +
+                      record.agir_hasta_sayisi.replace(
+                        /\B(?=(\d{3})+(?!\d))/g,
+                        ","
+                      )}
+                  </p>
+                  <p style={{ margin: 0 }}>
+                    {"Hastalarda Zatürre Oranı (%): " +
+                      record.hastalarda_zaturre_oran}
+                  </p>
+                  <p style={{ margin: 0 }}>
+                    {"Yatak Doluluk Oranı (%): " + record.yatak_doluluk_orani}
+                  </p>
+                  <p style={{ margin: 0 }}>
+                    {"Erişkin Yoğun Bakım Doluluk Oranı (%): " +
+                      record.eriskin_yogun_bakim_doluluk_orani}
+                  </p>
+                  <p style={{ margin: 0 }}>
+                    {"Ventilator Doluluk Oranı (%): " +
+                      record.ventilator_doluluk_orani}
+                  </p>
+                  <p style={{ margin: 0 }}>
+                    {"Filyasyon Oranı (%): " + record.filyasyon_orani}
+                  </p>
+                </>
+              ),
+            }}
+            dataSource={genaralStatusList.data.generalStatus}
+          />
         </TabPane>
       </Tabs>
     </div>
