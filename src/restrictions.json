@@ -1,0 +1,906 @@
+{
+    "source": "https:\/\/covid19.saglik.gov.tr\/?lang=tr-TR",
+    "updated": {
+        "date": "2021-03-29 17:40:02.306808",
+        "timezone_type": 3,
+        "timezone": "UTC"
+    },
+    "data": {
+        "current": [
+            {
+                "label": "Adana",
+                "value": 1,
+                "status": "3"
+            },
+            {
+                "label": "Adıyaman",
+                "value": 2,
+                "status": "4"
+            },
+            {
+                "label": "Afyon",
+                "value": 3,
+                "status": "3"
+            },
+            {
+                "label": "Ağrı",
+                "value": 4,
+                "status": "3"
+            },
+            {
+                "label": "Aksaray",
+                "value": 68,
+                "status": "4"
+            },
+            {
+                "label": "Amasya",
+                "value": 5,
+                "status": "4"
+            },
+            {
+                "label": "Ankara",
+                "value": 6,
+                "status": "4"
+            },
+            {
+                "label": "Antalya",
+                "value": 7,
+                "status": "4"
+            },
+            {
+                "label": "Ardahan",
+                "value": 75,
+                "status": "4"
+            },
+            {
+                "label": "Artvin",
+                "value": 8,
+                "status": "4"
+            },
+            {
+                "label": "Aydın",
+                "value": 9,
+                "status": "4"
+            },
+            {
+                "label": "Balıkesir",
+                "value": 10,
+                "status": "4"
+            },
+            {
+                "label": "Bartın",
+                "value": 74,
+                "status": "4"
+            },
+            {
+                "label": "Batman",
+                "value": 72,
+                "status": "2"
+            },
+            {
+                "label": "Bayburt",
+                "value": 69,
+                "status": "4"
+            },
+            {
+                "label": "Bilecik",
+                "value": 11,
+                "status": "4"
+            },
+            {
+                "label": "Bingöl",
+                "value": 12,
+                "status": "3"
+            },
+            {
+                "label": "Bitlis",
+                "value": 13,
+                "status": "2"
+            },
+            {
+                "label": "Bolu",
+                "value": 14,
+                "status": "4"
+            },
+            {
+                "label": "Burdur",
+                "value": 15,
+                "status": "3"
+            },
+            {
+                "label": "Bursa",
+                "value": 16,
+                "status": "4"
+            },
+            {
+                "label": "Çanakkale",
+                "value": 17,
+                "status": "4"
+            },
+            {
+                "label": "Çankırı",
+                "value": 18,
+                "status": "4"
+            },
+            {
+                "label": "Çorum",
+                "value": 19,
+                "status": "4"
+            },
+            {
+                "label": "Denizli",
+                "value": 20,
+                "status": "3"
+            },
+            {
+                "label": "Diyarbakır",
+                "value": 21,
+                "status": "2"
+            },
+            {
+                "label": "Düzce",
+                "value": 81,
+                "status": "4"
+            },
+            {
+                "label": "Edirne",
+                "value": 22,
+                "status": "4"
+            },
+            {
+                "label": "Elazığ",
+                "value": 23,
+                "status": "4"
+            },
+            {
+                "label": "Erzincan",
+                "value": 24,
+                "status": "4"
+            },
+            {
+                "label": "Erzurum",
+                "value": 25,
+                "status": "4"
+            },
+            {
+                "label": "Eskişehir",
+                "value": 26,
+                "status": "4"
+            },
+            {
+                "label": "Gaziantep",
+                "value": 27,
+                "status": "4"
+            },
+            {
+                "label": "Giresun",
+                "value": 28,
+                "status": "4"
+            },
+            {
+                "label": "Gümüşhane",
+                "value": 29,
+                "status": "4"
+            },
+            {
+                "label": "Hakkari",
+                "value": 30,
+                "status": "2"
+            },
+            {
+                "label": "Hatay",
+                "value": 31,
+                "status": "3"
+            },
+            {
+                "label": "Iğdır",
+                "value": 76,
+                "status": "4"
+            },
+            {
+                "label": "Isparta",
+                "value": 32,
+                "status": "4"
+            },
+            {
+                "label": "İstanbul",
+                "value": 34,
+                "status": "4"
+            },
+            {
+                "label": "İzmir",
+                "value": 35,
+                "status": "4"
+            },
+            {
+                "label": "Kahramanmaraş",
+                "value": 46,
+                "status": "3"
+            },
+            {
+                "label": "Karabük",
+                "value": 78,
+                "status": "4"
+            },
+            {
+                "label": "Karaman",
+                "value": 70,
+                "status": "4"
+            },
+            {
+                "label": "Kars",
+                "value": 36,
+                "status": "3"
+            },
+            {
+                "label": "Kastamonu",
+                "value": 37,
+                "status": "4"
+            },
+            {
+                "label": "Kayseri",
+                "value": 38,
+                "status": "4"
+            },
+            {
+                "label": "Kırıkkale",
+                "value": 71,
+                "status": "4"
+            },
+            {
+                "label": "Kırklareli",
+                "value": 39,
+                "status": "4"
+            },
+            {
+                "label": "Kırşehir",
+                "value": 40,
+                "status": "3"
+            },
+            {
+                "label": "Kilis",
+                "value": 79,
+                "status": "4"
+            },
+            {
+                "label": "Kocaeli",
+                "value": 41,
+                "status": "4"
+            },
+            {
+                "label": "Konya",
+                "value": 42,
+                "status": "4"
+            },
+            {
+                "label": "Kütahya",
+                "value": 43,
+                "status": "4"
+            },
+            {
+                "label": "Malatya",
+                "value": 44,
+                "status": "4"
+            },
+            {
+                "label": "Manisa",
+                "value": 45,
+                "status": "3"
+            },
+            {
+                "label": "Mardin",
+                "value": 47,
+                "status": "2"
+            },
+            {
+                "label": "Mersin",
+                "value": 33,
+                "status": "4"
+            },
+            {
+                "label": "Muğla",
+                "value": 48,
+                "status": "4"
+            },
+            {
+                "label": "Muş",
+                "value": 49,
+                "status": "2"
+            },
+            {
+                "label": "Nevşehir",
+                "value": 50,
+                "status": "4"
+            },
+            {
+                "label": "Niğde",
+                "value": 51,
+                "status": "4"
+            },
+            {
+                "label": "Ordu",
+                "value": 52,
+                "status": "4"
+            },
+            {
+                "label": "Osmaniye",
+                "value": 80,
+                "status": "4"
+            },
+            {
+                "label": "Rize",
+                "value": 53,
+                "status": "4"
+            },
+            {
+                "label": "Sakarya",
+                "value": 54,
+                "status": "4"
+            },
+            {
+                "label": "Samsun",
+                "value": 55,
+                "status": "4"
+            },
+            {
+                "label": "Siirt",
+                "value": 56,
+                "status": "2"
+            },
+            {
+                "label": "Sinop",
+                "value": 57,
+                "status": "4"
+            },
+            {
+                "label": "Sivas",
+                "value": 58,
+                "status": "4"
+            },
+            {
+                "label": "Şanlıurfa",
+                "value": 63,
+                "status": "2"
+            },
+            {
+                "label": "Şırnak",
+                "value": 73,
+                "status": "1"
+            },
+            {
+                "label": "Tekirdağ",
+                "value": 59,
+                "status": "4"
+            },
+            {
+                "label": "Tokat",
+                "value": 60,
+                "status": "4"
+            },
+            {
+                "label": "Trabzon",
+                "value": 61,
+                "status": "4"
+            },
+            {
+                "label": "Tunceli",
+                "value": 62,
+                "status": "3"
+            },
+            {
+                "label": "Uşak",
+                "value": 64,
+                "status": "2"
+            },
+            {
+                "label": "Van",
+                "value": 65,
+                "status": "2"
+            },
+            {
+                "label": "Yalova",
+                "value": 77,
+                "status": "4"
+            },
+            {
+                "label": "Yozgat",
+                "value": 66,
+                "status": "4"
+            },
+            {
+                "label": "Zonguldak",
+                "value": 67,
+                "status": "4"
+            }
+        ],
+        "estimated": [
+            {
+                "label": "Adana",
+                "value": 1,
+                "status": 3,
+                "rate": 61.58
+            },
+            {
+                "label": "Adıyaman",
+                "value": 2,
+                "status": 4,
+                "rate": 169.81
+            },
+            {
+                "label": "Afyon",
+                "value": 3,
+                "status": 2,
+                "rate": 47.36
+            },
+            {
+                "label": "Ağrı",
+                "value": 4,
+                "status": 2,
+                "rate": 41.46
+            },
+            {
+                "label": "Aksaray",
+                "value": 68,
+                "status": 4,
+                "rate": 214.42
+            },
+            {
+                "label": "Amasya",
+                "value": 5,
+                "status": 4,
+                "rate": 194.04
+            },
+            {
+                "label": "Ankara",
+                "value": 6,
+                "status": 4,
+                "rate": 107.99
+            },
+            {
+                "label": "Antalya",
+                "value": 7,
+                "status": 4,
+                "rate": 119.18
+            },
+            {
+                "label": "Ardahan",
+                "value": 75,
+                "status": 3,
+                "rate": 86.31
+            },
+            {
+                "label": "Artvin",
+                "value": 8,
+                "status": 4,
+                "rate": 113.86
+            },
+            {
+                "label": "Aydın",
+                "value": 9,
+                "status": 3,
+                "rate": 69.07
+            },
+            {
+                "label": "Balıkesir",
+                "value": 10,
+                "status": 4,
+                "rate": 288.16
+            },
+            {
+                "label": "Bartın",
+                "value": 74,
+                "status": 3,
+                "rate": 76.89
+            },
+            {
+                "label": "Batman",
+                "value": 72,
+                "status": 2,
+                "rate": 28.54
+            },
+            {
+                "label": "Bayburt",
+                "value": 69,
+                "status": 3,
+                "rate": 74.47
+            },
+            {
+                "label": "Bilecik",
+                "value": 11,
+                "status": 4,
+                "rate": 114.3
+            },
+            {
+                "label": "Bingöl",
+                "value": 12,
+                "status": 2,
+                "rate": 47.56
+            },
+            {
+                "label": "Bitlis",
+                "value": 13,
+                "status": 2,
+                "rate": 23.08
+            },
+            {
+                "label": "Bolu",
+                "value": 14,
+                "status": 4,
+                "rate": 100.38
+            },
+            {
+                "label": "Burdur",
+                "value": 15,
+                "status": 3,
+                "rate": 72.26
+            },
+            {
+                "label": "Bursa",
+                "value": 16,
+                "status": 3,
+                "rate": 97.14
+            },
+            {
+                "label": "Çanakkale",
+                "value": 17,
+                "status": 4,
+                "rate": 202.75
+            },
+            {
+                "label": "Çankırı",
+                "value": 18,
+                "status": 4,
+                "rate": 122.64
+            },
+            {
+                "label": "Çorum",
+                "value": 19,
+                "status": 4,
+                "rate": 138.65
+            },
+            {
+                "label": "Denizli",
+                "value": 20,
+                "status": 2,
+                "rate": 49.38
+            },
+            {
+                "label": "Diyarbakır",
+                "value": 21,
+                "status": 1,
+                "rate": 18.78
+            },
+            {
+                "label": "Düzce",
+                "value": 81,
+                "status": 3,
+                "rate": 95.28
+            },
+            {
+                "label": "Edirne",
+                "value": 22,
+                "status": 4,
+                "rate": 219.49
+            },
+            {
+                "label": "Elazığ",
+                "value": 23,
+                "status": 3,
+                "rate": 80.11
+            },
+            {
+                "label": "Erzincan",
+                "value": 24,
+                "status": 4,
+                "rate": 124.13
+            },
+            {
+                "label": "Erzurum",
+                "value": 25,
+                "status": 3,
+                "rate": 72.4
+            },
+            {
+                "label": "Eskişehir",
+                "value": 26,
+                "status": 4,
+                "rate": 116.56
+            },
+            {
+                "label": "Gaziantep",
+                "value": 27,
+                "status": 3,
+                "rate": 87.33
+            },
+            {
+                "label": "Giresun",
+                "value": 28,
+                "status": 4,
+                "rate": 356.35
+            },
+            {
+                "label": "Gümüşhane",
+                "value": 29,
+                "status": 4,
+                "rate": 105.15
+            },
+            {
+                "label": "Hakkari",
+                "value": 30,
+                "status": 1,
+                "rate": 15.69
+            },
+            {
+                "label": "Hatay",
+                "value": 31,
+                "status": 3,
+                "rate": 61.77
+            },
+            {
+                "label": "Iğdır",
+                "value": 76,
+                "status": 4,
+                "rate": 107.3
+            },
+            {
+                "label": "Isparta",
+                "value": 32,
+                "status": 3,
+                "rate": 74.49
+            },
+            {
+                "label": "İstanbul",
+                "value": 34,
+                "status": 4,
+                "rate": 251.12
+            },
+            {
+                "label": "İzmir",
+                "value": 35,
+                "status": 4,
+                "rate": 111.41
+            },
+            {
+                "label": "Kahramanmaraş",
+                "value": 46,
+                "status": 3,
+                "rate": 67.37
+            },
+            {
+                "label": "Karabük",
+                "value": 78,
+                "status": 3,
+                "rate": 84.15
+            },
+            {
+                "label": "Karaman",
+                "value": 70,
+                "status": 3,
+                "rate": 89.44
+            },
+            {
+                "label": "Kars",
+                "value": 36,
+                "status": 2,
+                "rate": 30.53
+            },
+            {
+                "label": "Kastamonu",
+                "value": 37,
+                "status": 4,
+                "rate": 197.41
+            },
+            {
+                "label": "Kayseri",
+                "value": 38,
+                "status": 4,
+                "rate": 196.07
+            },
+            {
+                "label": "Kırıkkale",
+                "value": 71,
+                "status": 3,
+                "rate": 73.91
+            },
+            {
+                "label": "Kırklareli",
+                "value": 39,
+                "status": 4,
+                "rate": 155.09
+            },
+            {
+                "label": "Kırşehir",
+                "value": 40,
+                "status": 3,
+                "rate": 61.31
+            },
+            {
+                "label": "Kilis",
+                "value": 79,
+                "status": 4,
+                "rate": 258.42
+            },
+            {
+                "label": "Kocaeli",
+                "value": 41,
+                "status": 4,
+                "rate": 176.39
+            },
+            {
+                "label": "Konya",
+                "value": 42,
+                "status": 4,
+                "rate": 252.18
+            },
+            {
+                "label": "Kütahya",
+                "value": 43,
+                "status": 4,
+                "rate": 111.33
+            },
+            {
+                "label": "Malatya",
+                "value": 44,
+                "status": 4,
+                "rate": 140.54
+            },
+            {
+                "label": "Manisa",
+                "value": 45,
+                "status": 3,
+                "rate": 64.66
+            },
+            {
+                "label": "Mardin",
+                "value": 47,
+                "status": 1,
+                "rate": 17.08
+            },
+            {
+                "label": "Mersin",
+                "value": 33,
+                "status": 3,
+                "rate": 80.7
+            },
+            {
+                "label": "Muğla",
+                "value": 48,
+                "status": 3,
+                "rate": 92.33
+            },
+            {
+                "label": "Muş",
+                "value": 49,
+                "status": 2,
+                "rate": 21.16
+            },
+            {
+                "label": "Nevşehir",
+                "value": 50,
+                "status": 3,
+                "rate": 79.35
+            },
+            {
+                "label": "Niğde",
+                "value": 51,
+                "status": 4,
+                "rate": 104.4
+            },
+            {
+                "label": "Ordu",
+                "value": 52,
+                "status": 4,
+                "rate": 258.87
+            },
+            {
+                "label": "Osmaniye",
+                "value": 80,
+                "status": 4,
+                "rate": 198.52
+            },
+            {
+                "label": "Rize",
+                "value": 53,
+                "status": 4,
+                "rate": 202.41
+            },
+            {
+                "label": "Sakarya",
+                "value": 54,
+                "status": 4,
+                "rate": 124.49
+            },
+            {
+                "label": "Samsun",
+                "value": 55,
+                "status": 4,
+                "rate": 508.97
+            },
+            {
+                "label": "Siirt",
+                "value": 56,
+                "status": 1,
+                "rate": 14.2
+            },
+            {
+                "label": "Sinop",
+                "value": 57,
+                "status": 4,
+                "rate": 309.06
+            },
+            {
+                "label": "Sivas",
+                "value": 58,
+                "status": 3,
+                "rate": 55.83
+            },
+            {
+                "label": "Şanlıurfa",
+                "value": 63,
+                "status": 1,
+                "rate": 18.3
+            },
+            {
+                "label": "Şırnak",
+                "value": 73,
+                "status": 1,
+                "rate": 8.18
+            },
+            {
+                "label": "Tekirdağ",
+                "value": 59,
+                "status": 4,
+                "rate": 168.26
+            },
+            {
+                "label": "Tokat",
+                "value": 60,
+                "status": 4,
+                "rate": 248.72
+            },
+            {
+                "label": "Trabzon",
+                "value": 61,
+                "status": 4,
+                "rate": 246.95
+            },
+            {
+                "label": "Tunceli",
+                "value": 62,
+                "status": 3,
+                "rate": 63.52
+            },
+            {
+                "label": "Uşak",
+                "value": 64,
+                "status": 1,
+                "rate": 19.49
+            },
+            {
+                "label": "Van",
+                "value": 65,
+                "status": 2,
+                "rate": 27.41
+            },
+            {
+                "label": "Yalova",
+                "value": 77,
+                "status": 4,
+                "rate": 275.31
+            },
+            {
+                "label": "Yozgat",
+                "value": 66,
+                "status": 3,
+                "rate": 92.82
+            },
+            {
+                "label": "Zonguldak",
+                "value": 67,
+                "status": 3,
+                "rate": 81.01
+            }
+        ],
+        "dailyStatus": null
+    }
+}
