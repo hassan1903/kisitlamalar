@@ -9,7 +9,13 @@
     {
       "ruleId": 1,
       "label": "Haftasonu sadece Cumartesi günü sabah 05:00 ila akşam 21:00 arası sokağa çıkabilirsiniz. Pazar günü yasaklar devam ediyor.",
-      "status": [3, 4],
+      "status": [3],
+      "icon": "cross"
+    },
+    {
+      "ruleId": 1,
+      "label": "Haftasonu sokağa çıkmak yasak.",
+      "status": [4],
       "icon": "cross"
     },
     {
@@ -99,13 +105,7 @@
     {
       "ruleId": 13,
       "label": "Restoran, lokanta, kafetarya, tatlıcı, pastane ve kıraathane gibi yerler 07:00-19:00 saatleri arasında %50 kapasite ile açık olacak. Yeme-içme yerleri 19:00-21.00 saatleri arasında paket servisi veya gel-al şeklinde, 21.00-24.00 saatleri arasında ise sadece paket servis şeklinde hizmet verebilecekler.",
-      "status": [1, 2, 3],
-      "icon": "check"
-    },
-    {
-      "ruleId": 13,
-      "label": "Restoran, lokanta, kafetarya, tatlıcı, pastane ve kıraathane gibi yerler kapalı olacak. Yeme içme yerleri, 10.00-20.00 saatleri arasında paket servisi veya gel-al şeklinde, 20.00-24.00 saatleri arasında ise sadece paket servis şeklinde hizmet verebilecek olup ayrıca işyeri içerisinde hizmet sunamayacaklar.",
-      "status": [4],
+      "status": [1, 2, 3, 4],
       "icon": "cross"
     },
     {
